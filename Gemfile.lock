@@ -86,7 +86,6 @@ GEM
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
     encryptor (1.3.0)
-    enumerable-lazy (0.0.2)
     equalizer (0.0.11)
     erubi (1.9.0)
     erubis (2.7.0)
@@ -100,13 +99,10 @@ GEM
       i18n (>= 0.7)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    grape (0.16.2)
+    grape (1.1.0)
       activesupport
       builder
-      hashie (>= 2.1.0)
-      multi_json (>= 1.3.2)
-      multi_xml (>= 0.5.2)
-      mustermann19 (~> 0.4.3)
+      mustermann-grape (~> 1.0.0)
       rack (>= 1.3.0)
       rack-accept
       virtus (>= 1.0.0)
@@ -115,7 +111,6 @@ GEM
       grape
     grape-swagger (0.32.1)
       grape (>= 0.16.2)
-    hashie (4.1.0)
     hirb (0.7.3)
     http-accept (1.7.0)
     http-cookie (1.0.3)
@@ -148,9 +143,10 @@ GEM
       railties (~> 4.1)
     moss_ruby (1.1.3)
     multi_json (1.14.1)
-    multi_xml (0.6.0)
-    mustermann19 (0.4.4)
-      enumerable-lazy
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-grape (1.0.1)
+      mustermann (>= 1.0.0)
     net-ldap (0.16.2)
     netrc (0.11.0)
     nokogiri (1.10.9)
@@ -234,6 +230,7 @@ GEM
     ruby-filemagic (0.7.2)
     ruby-ole (1.2.12.2)
     ruby-progressbar (1.10.1)
+    ruby2_keywords (0.0.2)
     rubyzip (1.3.0)
     securecompare (1.0.0)
     sexp_processor (4.14.1)
@@ -290,7 +287,7 @@ DEPENDENCIES
   factory_bot
   factory_bot_rails
   faker (~> 1.9.1)
-  grape (= 0.16.2)
+  grape (= 1.1.0)
   grape-active_model_serializers (~> 1.3.2)
   grape-swagger
   hirb
