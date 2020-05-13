@@ -1,0 +1,11 @@
+version: '2'
+services:
+  api:
+    container_name: doubtfire-api
+    build: . 
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/doubtfire-api
+      - /doubtfire-api/.bundle
+      - /doubtfire-api/tmp
